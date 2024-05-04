@@ -1,38 +1,71 @@
 # Welcome! #
-Welcome message
+Welcome! Over the course of this experience
 
-# getting-started #
+# Getting Started #
 Before we can begin down this rabbit hole, we first need a testing environment. While cyber-security 
 is relevant to every digital system, this process will go best if we can establish some toolboxes to 
 work with.
 
 # Table of Contents #
-1. [Installing Linux (optional)](#linux)
-   1. [Choosing a Distro](#distro)
-   2. [Downloading And Verifying](#download)
-   3. [Mounting The OS](#mounting)
-   4. [Final Steps](#final)
-2. [Setting Up a VM](#vm)
-   1. [Downloading A Virtual Host](#host)
-   2. [Installing A Machine](#machine)
-   3. [Signing The System Kernal](#kernal)
-3. [Checking Initial Dependencies](#checking)
-   1. [git](#git)
-   2. [ssh](#ssh)
-   3. [OpenSSL](#openssl)
-   4. [John The Ripper](#john)
-4. [Hello, World!](#hello)
-   1. [In Python](#python)
-   2. [In A Different Language](#different)
+- [Welcome!](#welcome)
+- [Getting Started](#getting-started)
+- [Table of Contents](#table-of-contents)
+- [Installing Linux (optional)](#installing-linux-optional)
+  - [Choosing a Distro](#choosing-a-distro)
+  - [Downloading And Verifying](#downloading-and-verifying)
+  - [Mounting The OS](#mounting-the-os)
+  - [Final Steps](#final-steps)
+- [Setting Up a VM](#setting-up-a-vm)
+  - [Downloading A Virtual Host](#downloading-a-virtual-host)
+  - [Installing A Machine](#installing-a-machine)
+  - [Signing The System Kernal](#signing-the-system-kernal)
+- [Checking Install Dependencies](#checking-install-dependencies)
+  - [git](#git)
+  - [ssh](#ssh)
+  - [OpenSSL](#openssl)
+  - [John The Ripper](#john-the-ripper)
+- [Hello, World!](#hello-world)
+  - [In Python](#in-python)
+  - [In A Different Language](#in-a-different-language)
 
-# Installing Linux (optional) <a name="linux"></a> #
+
+# Installing Linux (optional) #
 Linux
 
-# Setting Up a VM <a name="distro"></a> #
+## Choosing a Distro ##
+
+## Downloading And Verifying ##
+
+## Mounting The OS ##
+
+## Final Steps ##
+
+
+# Setting Up a VM #
 VM
 
-# Checking Install Dependencies <a name="checking"></a> #
+## Downloading A Virtual Host ##
+
+## Installing A Machine ##
+
+## Signing The System Kernal ##
+
+
+# Checking Install Dependencies #
 Dependencies
 
-# Hello, World! <a name="hello"></a> #
+## git ##
+
+## ssh ##
+
+## OpenSSL ##
+
+## John The Ripper ##
+
+
+# Hello, World! #
 Hello
+
+## In Python ##
+
+## In A Different Language ##
