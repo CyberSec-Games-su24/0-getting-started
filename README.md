@@ -1,10 +1,17 @@
 # Welcome! #
-Welcome! Over the course of this experience
+Welcome! Over the course of this experience, you will be introduced to key concepts about 
+information security and network security in a live environment. This will leave you 
+
+---
+---
 
 # Getting Started #
 Before we can begin down this rabbit hole, we first need a testing environment. While cyber-security 
 is relevant to every digital system, this process will go best if we can establish some toolboxes to 
 work with.
+
+---
+---
 
 # Table of Contents #
 - [Welcome!](#welcome)
@@ -17,10 +24,13 @@ work with.
   - [Final Steps](#final-steps)
 - [Setting Up a VM](#setting-up-a-vm)
   - [Downloading A Virtual Host](#downloading-a-virtual-host)
+    - [For Linux Users](#for-linux-users)
+    - [For Windows Users](#for-windows-users)
   - [Installing A Machine](#installing-a-machine)
-  - [Signing The System Kernal](#signing-the-system-kernal)
 - [Checking Install Dependencies](#checking-install-dependencies)
   - [git](#git)
+    - [Git On Linux](#git-on-linux)
+    - [Git On Windows](#git-on-windows)
   - [ssh](#ssh)
   - [OpenSSL](#openssl)
   - [John The Ripper](#john-the-ripper)
@@ -28,6 +38,8 @@ work with.
   - [In Python](#in-python)
   - [In A Different Language](#in-a-different-language)
 
+---
+---
 
 # Installing Linux (optional) #
 While this isn't necessary, if you intend on having a machine specifically for programming 
@@ -98,20 +110,108 @@ titled something like "mount system".
 
 Play around with it for a bit, the world is your oyster!
 
+---
+---
+
 # Setting Up a VM #
-VM
+Handling static information will be fine in a mounted operating system, but some of the attacks we're going to run are not ethical to 
+do in a public environment. To isolate these systems, we can install virtual machines (VMs) to be hosted within the computer. 
+This will turn our physical device into a network host, with the VMs emulating an ethernet connection to this false network. This 
+virtualized network will allow us to run network-based expiriments without risking penetrating a real network.
 
 ## Downloading A Virtual Host ##
+I recommend <a href="https://customerconnect.vmware.com/en/downloads/details?downloadGroup=WKST-PLAYER-1751&productId=1377&rPId=117008">VMWare Workstation Player</a> 
+for working with virtual networks. If you have a preferred VM service, go ahead and use it, but you're on you're own cowboy.
+
+- [For Linux Users](#for-linux-users)
+- [For Windows Users](#for-windows-users)
+
+### For Linux Users ###
+On Linux, you will need to download the first listed option. This will install a .bundle file to your device, now open your terminal. 
+We have an archive downloaded, but we need to unpack it and build the app. Luckily, this is only a two-step process in this circumstance. 
+
+---
+
+Firstly, we need to give executable permissions to the read-only archive. In linux, this command is
+```
+chmod a+x ./path/to/bundle
+```
+where "./path/to/bundle" is the relative path to your VMWare download.
+
+*Command Breakdown* <br>
+chmod is instrumantal for controlling file permissions in Linux, so let's break down what's actually happening here.
+
+**a** <br>
+The first character in our seemingly random string following the chmod command designates which groups we are updating permissions for. 
+In Linux, there are four groups u (the single user), g (the users in the file's group), o (others), and a (all users). In this case, we are just updating the 
+permissions this file has for all the users because this system isn't complex enough for it to particularly matter _in this case!_
+
+**+** <br>
+With chmod, we can grant and remove permissions at any given point, so which one we are doing is represented by a + (granting) or a - (removing).
+
+**x** <br>
+Now that we've defined who we're talking about and what action we're taking, we need to define which permissions are being affected. Because we want to 
+create an executable we are using x, but there are many more including w (write) and r (read). Some of these permissions have lengthy definitions, so I recommend 
+<a href="https://www.computerhope.com/unix/uchmod.htm">reading this</a> for a more in-depth look.
+
+**In Other Words...** <br>
+Now that we've defined each portion of this command, we can write this command in English with the sentence
+```
+Using chmod, we are going to be granting execute permissions for all users to the file at this location.
+```
+---
+
+Now that we have an executable file, we simply need to execute it from the terminal by passing the path (relative or absolute) into the command line as follows 
+```
+./path/to/bundle
+or
+/absolute/path/to/bundle
+```
+And that's it! With the file having executable permissions, the terminal knows when it reads the path that you're trying to execute it.
+
+---
+
+\<TODO> Signing kernels and MOK Enrollment
+
+
+### For Windows Users ###
+On windows, you simply need to download the executable listed second on the above download page. From there, click on it and follow the 
+setup wizard.
 
 ## Installing A Machine ##
+To create a virtual machine in your chosen virtual host, you simply need to download the system file to your local files 
+and upload it through your newly-installed software. For Linux-based virtual machines, you can use any of the downloads listed in 
+[Downloading And Verifying](#downloading-and-verifying). For Windows machines, refer to these sources for 
+<a href="https://www.microsoft.com/en-us/software-download/windows10ISO">Windows 10</a> and 
+<a href="https://www.microsoft.com/software-download/windows11">Windows 11</a> .iso file downloads.
 
-## Signing The System Kernal ##
+Alternatively, there are .ova files available that will download a full environment that extends beyond that of a base operating system 
+(extra apps/dependencies, custom scripts, etc). The use of these will not be covered in the content of this exploration, but they are an 
+interesting thing to explore if you feel compelled.
 
+---
+---
 
 # Checking Install Dependencies #
-Dependencies
+These labs are aimed at developing a tool kit of security skills, 
+so there are some dependencies we will use throughout that need checked/installed.
 
 ## git ##
+To check whether or not git is installed on the system you will be using, run the command below.
+```
+git -v
+```
+If this returns something like "git version x.xx.x", the dependency is installed. If this command returns an error, 
+continue below.
+
+### Git On Linux ###
+To install git on a Linux machine, run the command 
+```
+sudo apt install git
+```
+and enter your password if requested.
+
+### Git On Windows ###
 
 ## ssh ##
 
@@ -119,6 +219,8 @@ Dependencies
 
 ## John The Ripper ##
 
+---
+---
 
 # Hello, World! #
 Hello
