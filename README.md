@@ -1,6 +1,9 @@
 # Welcome! #
-Welcome! Over the course of this experience, you will be introduced to key concepts about 
-information and network security in a live environment. This will leave you 
+These instructions are intended to walk you through setting up your environment for this summer in the way that I think 
+will be the most successful by default. That being said, I understand that we can't all just flash a fresh operating system 
+to our device and start from scratch. Along with that, if you have an already-established environment that you enjoy, 
+please use it! The best systems are the ones you enjoy the most. While my instructions will be most rigorously tested on 
+the prescribed materials, I will strive to include comments and resources for users of all systems.
 
 ---
 ---
