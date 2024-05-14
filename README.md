@@ -96,7 +96,7 @@ borrow a family member's iPad, etc, do so now.
 
 At this point, you should have a verified .iso file for your chosen operating system downloaded. Now you will need to 
 create a mountable USB flashed with the file to write to your device. To create this drive, you will need a sufficiently sized 
-thumb drive (8gb should be ok, but >16gb will absoultely be fine) that you don't mind losing everything on and your .iso file. 
+thumb drive (16gb or larger is strongly recommended, but if you NEED to do it with 8gb contact me) that you don't mind losing everything on and your .iso file. 
 If you've never flashed a thumb drive, I recommend using <a href="https://etcher.balena.io/#download-etcher">Balena Etcher</a> to flash. 
 It's relatively easy to do, so just follow the instructions and you'll be ok.
 
