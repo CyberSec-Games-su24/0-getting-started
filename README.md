@@ -143,16 +143,16 @@ for working with virtual networks. If you have a preferred VM service, go ahead 
 - [For Windows Users](#for-windows-users)
 
 ### For Linux Users ###
-On Linux, you will need to download the first listed option. This will install a .bundle file to your device, now open your terminal. 
+On Linux, you will need to download the first listed option. This will install a .deb file to your device, now open your terminal. 
 We have an archive downloaded, but we need to unpack it and build the app. Luckily, this is only a two-step. 
 
 ---
 
 We need to give executable permissions to the read-only archive. In Linux, this command is
 ```
-chmod a+x ./path/to/bundle
+chmod a+x ./path/to/deb
 ```
-where "./path/to/bundle" is the relative path to your VMware download.
+where "./path/to/deb" is the relative path to your VMware download.
 
 *Command Breakdown* <br>
 chmod is instrumantal for controlling file permissions in Linux, so let's break down what's actually happening here.
