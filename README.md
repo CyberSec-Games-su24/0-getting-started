@@ -27,6 +27,8 @@ work with.
   - [Final Steps](#final-steps)
 - [Setting Up a VM](#setting-up-a-vm)
   - [Downloading A Virtual Host](#downloading-a-virtual-host)
+  - [Update!!](#update)
+  - [Old Install Instructions (ignore unless you're VERY stubborn)](#old-install-instructions-ignore-unless-youre-very-stubborn)
     - [For Linux Users](#for-linux-users)
     - [For Windows Users](#for-windows-users)
   - [Installing A Machine](#installing-a-machine)
@@ -128,6 +130,12 @@ This will turn our physical device into a network host, with the VMs emulating a
 virtualized network will allow us to run network-based expiriments without the risk of affecting a real network.
 
 ## Downloading A Virtual Host ##
+
+## Update!! ##
+Since I wrote this documentation, VMWare has gortten bought out by a commercial distributor. It is still accessible, so I'll leave the original instructions below, but it is a huge pain to get to. Instead, <a href="https://www.virtualbox.org/wiki/Downloads">Oracle's VirtualBox</a> is available for free. I haven't had a chance to rigorously confirm that this service won't cause hiccups later, but it'll suffice for now.
+
+## Old Install Instructions (ignore unless you're VERY stubborn) ##
+
 I recommend <a href="https://customerconnect.vmware.com/en/downloads/details?downloadGroup=WKST-PLAYER-1751&productId=1377&rPId=117008">VMware Workstation Player</a> 
 for working with virtual networks. If you have a preferred VM service, go ahead and use it, but you're on you're own cowboy.
 
@@ -180,9 +188,6 @@ This app can be found wherever your chosen operating system shows its installed 
 as you wish.
 
 ---
-
-\<TODO> Signing kernels and MOK Enrollment
-
 
 ### For Windows Users ###
 On Windows, you simply need to download the executable listed second on the above download page. From there, click on it and follow the 
